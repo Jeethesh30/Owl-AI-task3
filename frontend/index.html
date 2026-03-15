@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Daily Tasks</title>
+
+<link rel="stylesheet" href="/static/styles.css">
+
+</head>
+
+<body>
+
+<main class="app-shell">
+
+<section class="card">
+
+<h1>Daily Tasks</h1>
+<p class="subtitle">Simple frontend for your to-do list</p>
+
+<form id="task-form" class="task-form">
+
+<input id="task-input" placeholder="Add a task..." required>
+
+<input id="due-date-input" type="date">
+
+<input id="note-input" placeholder="Note (optional)">
+
+<select id="priority-input">
+
+<option value="LOW">Low Priority</option>
+<option value="MEDIUM">Medium Priority</option>
+<option value="HIGH">High Priority</option>
+
+</select>
+
+<button>Add</button>
+
+</form>
+
+
+<div class="controls-row">
+
+<input id="search-input" placeholder="Search tasks...">
+
+<select id="sort-select">
+
+<option value="added">Sort: Order Added</option>
+<option value="title">Sort: Title (A-Z)</option>
+<option value="priority">Sort: Priority</option>
+
+</select>
+
+</div>
+
+<ul id="task-list" class="task-list"></ul>
+
+<p id="empty-state" class="empty-state">
+No tasks yet. Add one above.
+</p>
+
+</section>
+
+</main>
+
+<script src="/static/app.js"></script>
+
+</body>
+
+</html>
